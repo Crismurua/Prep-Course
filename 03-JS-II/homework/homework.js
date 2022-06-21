@@ -7,8 +7,8 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x;
-  } else {
-  return y;}
+  }
+  return y;
 }
 
 function mayoriaDeEdad(edad) {
@@ -31,9 +31,11 @@ function conection(status) {
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1) {
     return 'Online';
-  } else if (status === 2) {
+  } 
+  else if (status === 2) {
     return 'Away';
-  } else {
+  }
+  else {
     return 'Offline';
   }
 }
@@ -47,11 +49,14 @@ function saludo(idioma) {
   // Tu código:
   if (idioma === 'aleman') {
     return 'Guten Tag!';
-  } else if (idioma === 'mandarin') {
+  } 
+  else if (idioma === 'mandarin') {
     return 'Ni Hao!';
-  } else if (idioma === 'ingles') {
+  } 
+  else if (idioma === 'ingles') {
     return 'Hello!';
-  } else {
+  } 
+  else {
     return 'Hola!';
   }
 }
@@ -164,7 +169,7 @@ function esPrimo(numero) {
     return true;
   }
   for (var i = 2; i < numero; i++) {
-    if (numero% i === 0) {
+    if (numero % i === 0) {
       return false;
     }
   }
@@ -190,7 +195,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var tabla = []
-  for (var i = 0; i <= 10; i++) {
+  for (var i = 0; i < 11; i++) {
      tabla.push(6 * i);
   }
   return tabla;
@@ -212,14 +217,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var resultado = 0
+  var suma = numero 
   var i = 0
   do {
-    i = i++;
-    resultado = numero + 5;
-  } while (i < 8);
+    i = i + 1;
+    suma = suma + 5;
+  } 
+  while (i < 8);
 
-  return resultado;
+  return suma;
 }
 
 
